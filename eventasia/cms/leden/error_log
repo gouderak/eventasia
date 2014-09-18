@@ -1,0 +1,4 @@
+[18-Sep-2014 13:19:57 Europe/Berlin] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'lars2dig'@'localhost' (using password: YES) in /home/lars2dig/public_html/cms/library/database.class.php on line 23
+[18-Sep-2014 13:19:57 Europe/Berlin] PHP Warning:  mysqli::query() [<a href='mysqli.query'>mysqli.query</a>]: Couldn't fetch mysqli in /home/lars2dig/public_html/cms/library/database.class.php on line 171
+[18-Sep-2014 13:19:57 Europe/Berlin] PHP Warning:  database::query() [<a href='database.query'>database.query</a>]: Couldn't fetch mysqli in /home/lars2dig/public_html/cms/library/database.class.php on line 86
+[18-Sep-2014 13:19:57 Europe/Berlin] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/lars2dig/public_html/cms/library/overview.class.php on line 32

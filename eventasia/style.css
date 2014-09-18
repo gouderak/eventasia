@@ -1,0 +1,117 @@
+
+/****BEGIN ALGEMENE DINGEN****/
+
+* {
+	margin:						0;
+	padding:					0;
+}
+
+html, body {
+	height: 					100%;
+	overflow-x:					hidden;	
+}
+	
+body {
+	background:					#e3e3e3;
+}
+
+/****EINDE ALGEMENE DINGEN****/
+
+/****BEGIN CONTAINER****/
+
+#container {
+	width:						100%;
+	background:					#ececec;
+	margin:						auto;
+	overflow-x:					hidden;
+}
+	
+/****EINDE CONTAINER****/
+
+/****BEGIN HEADER****/
+
+#header {
+	width:						100%;
+	height:						15%;	
+	background:					url('/eventasia/images/eventasia_logo.png') #e3e3e3 no-repeat;
+}
+
+/****EINDE HEADER****/
+
+/****BEGIN MENU****/
+
+#menu {
+	vertical-align:				middle;
+	width:						10%;
+	float:						left;
+	height:						80%;
+	background-color: 			#536afe;
+}
+
+#menu ul {
+	list-style-type: 			none;
+	width:						190px;
+}
+#menu ul li {
+	margin: 					0;
+}
+#menu ul li a {
+	text-decoration:			none;
+	display: 					block; 
+	padding: 					15px;
+	background-color: 			#536afe;
+	color: 						#fff;
+}
+#menu ul li a:hover {
+	background-color: 			#5F94DC;
+}
+
+/****EINDE MENU****/
+
+/****BEGIN CONTENT****/
+
+#content {
+	width:						90%;
+	float:						left;
+	height:						80%;
+}
+	
+a.items {
+	background:					#ececec;
+	border:						none !important;
+	color:						#000;
+}
+
+table {
+   border-collapse: collapse;
+   font: 12px verdana;
+}
+
+th, td { 
+	text-align: justify;
+	}
+	
+td {
+	vertical-align: top; 
+}
+/****EINDE CONTENT****/
+
+/****BEGIN FOOTER****/
+
+#footer {
+	height:						5%;
+	background:					#e3e3e3;
+	text-align:					center;
+}
+
+#footer {
+	height:						2%;
+	background:					#e3e3e3;
+}
+
+#footer .push {
+	width:						100%;
+	height:						50px;	
+	margin:						auto;
+}
+/****EINDE FOOTER****/

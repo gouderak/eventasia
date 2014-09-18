@@ -1,0 +1,5 @@
+[14-Jan-2014 15:40:33 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')' in /home/lars2dig/public_html/cms/paginaopbouw/sidebar.php on line 103
+[14-Jan-2014 15:40:36 Europe/Berlin] PHP Parse error:  syntax error, unexpected ')' in /home/lars2dig/public_html/cms/paginaopbouw/sidebar.php on line 103
+[14-Jan-2014 15:50:40 Europe/Berlin] PHP Fatal error:  Cannot access empty property in /home/lars2dig/public_html/cms/library/database.class.php on line 146
+[14-Jan-2014 15:51:06 Europe/Berlin] PHP Parse error:  syntax error, unexpected T_PAAMAYIM_NEKUDOTAYIM in /home/lars2dig/public_html/cms/library/database.class.php on line 146
+[18-Sep-2014 13:19:48 Europe/Berlin] PHP Warning:  mysqli::mysqli() [<a href='mysqli.mysqli'>mysqli.mysqli</a>]: (28000/1045): Access denied for user 'lars2dig'@'localhost' (using password: YES) in /home/lars2dig/public_html/cms/library/database.class.php on line 23
