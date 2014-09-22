@@ -1,0 +1,327 @@
+/* Main */
+
+html, body, ul{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+body {
+    color: #f;
+    background: #f1f2f7 !important;
+    font-family: 'Open Sans', sans-serif !important;
+    padding: 0px !important !important;
+    margin: 0px !important !important;
+    font-size:13px !important;
+}
+
+
+h6 {
+	font-weight: bold !important;
+	font-size: 16px !important;
+}
+	
+ul li {
+    list-style: none;
+}
+
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+::selection {
+    background: #FF6C60;
+    color: #fff;
+}
+::-moz-selection {
+    background: #FF6C60;
+    color: #fff;
+}
+
+/* Default styling */
+		
+	.white-bg{
+		background: #fff;
+		border-bottom: 1px solid #f1f2f7;
+	}
+	
+	.header{
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 1002;
+	}
+	
+	.header, .footer{
+		min-height: 100px;
+		padding: 0 15px;
+	}
+	
+	/* Main content */
+	
+	#main-content{
+		margin-left: 180px;
+	}
+	
+	.wrapper {
+		display: inline-block;
+		margin-top: 100px;
+		padding: 15px;
+		width: 100%;
+	}
+	
+	/* Side-menu */
+	
+	#sidebar{
+		width: 180px;
+		height: 100%;
+		position: fixed;
+		background: #2a3542;
+	}
+	
+		ul.sidebar-menu {
+			margin-top: 125px !important;
+		}
+		
+		ul.sidebar-menu li {
+			line-height: 20px !important;
+			margin-bottom: 5px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		
+		/* Icon */
+		
+		ul.sidebar-menu li i{
+			font-size: 15px;
+			padding-right: 6px;
+		}
+		
+		/* Arrow */
+		
+		#sidebar ul > li > a .arrow {
+			border-bottom: 4px solid transparent;
+			border-left: 4px solid #A0A0A0;
+			border-top: 4px solid transparent;
+			float: right;
+			height: 0;
+			margin-right: 10px;
+			margin-top: 6px;
+			width: 0;
+		}
+		
+		.arrow{
+			-ms-transform: rotate(0deg); /* IE 9 */
+		    -webkit-transform: rotate(0deg); /* Safari and Chrome */
+		    -o-transform: rotate(0deg); /* Opera */
+		    -moz-transform:rotate(0deg); /* Firefox */
+		    transform: rotate(0deg);
+		    -webkit-transition: .3s;   
+		    transition: .3s; 
+		}
+		
+		ul.sidebar-menu li a {
+			color: #aeb2b7;
+			text-decoration: none;
+			display: block;
+			padding: 15px 0 15px 10px;
+			font-size: 12px;
+			outline: none;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+		
+		/* Actions */
+		
+		ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+			background: #35404d;
+			color: #fff;
+			display: block;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+		
+		ul.sidebar-menu li.active a, ul.sidebar-menu li a:hover, ul.sidebar-menu li a:focus {
+			color: #fff;
+			display: block;
+			border-radius: 4px;
+			-webkit-border-radius: 4px;
+			-webkit-transition: all 0.3s ease;
+			-moz-transition: all 0.3s ease;
+			-o-transition: all 0.3s ease;
+			-ms-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+		}
+		
+		ul.sidebar-menu li:hover a .arrow{
+			-webkit-transition: all 0.3s ease-in-out;
+			-moz-transition: all 0.3s ease-in-out;
+			-o-transition: all 0.3s ease-in-out;
+			-ms-transition: all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			
+			-moz-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);  
+			transform: rotate(90deg);
+		}
+		
+		/* Icon behavior */
+		
+		ul.sidebar-menu li a:hover i, ul.sidebar-menu li a:focus i {
+			color: #FF6C60;
+		}
+		
+		ul.sidebar-menu li.active a i {
+			color: #FF6C60;
+		}
+		
+		/* Arrow behavior */
+		
+		ul.sidebar-menu li.active a .rotated{
+			-moz-transform: rotate(90deg);
+			-o-transform: rotate(90deg);
+			-webkit-transform: rotate(90deg);
+			-ms-transform: rotate(90deg);  
+			transform: rotate(90deg);
+		}
+		
+		#sidebar ul > li.active > a .arrow, #sidebar ul > li > a:hover .arrow, #sidebar ul > li > a:focus .arrow {
+			float: right;
+			margin-top: 6px;
+			margin-right: 10px;
+			width: 0;
+			height: 0;
+			border-left: 4px solid #fff;
+			border-top: 4px solid transparent;
+			border-bottom: 4px solid transparent;
+		}
+		
+		/* Submenu */
+		
+		.submenu{
+			display: none;
+		}
+		
+		ul.sidebar-menu li.active ul li a, ul.sidebar-menu li.active ul li a i{
+			background-color: transparent;
+			color: #aeb2b7;
+		}
+		
+		ul.submenu li a:hover{
+			background-color: transparent !important;
+			color: #fff !important;
+		}
+		
+		ul.submenu li a{
+			padding-bottom: 5px;
+		}
+		
+		ul.submenu li a:hover i{
+			color: #FF6C60 !important;
+		}
+		
+		ul.submenu li.active a{
+			color: #fff !important;
+		}
+		
+		ul.submenu li.active a i{
+			color: #FF6C60 !important;
+		}
+		
+
+	/* Login page */
+	
+	.login-body {
+		background-color: #f1f2f7;
+	}
+	
+	.form-signin {
+		max-width: 330px;
+		margin: 125px auto 0;
+		background: #fff;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+	}
+	
+		.login-wrap {
+			padding: 20px;
+		}
+		
+		.form-signin input{
+			width: 100%;
+		}
+		
+		.form-signin a {
+			color: #b6b6b6;
+		}
+		
+		.form-signin .checkbox {
+			font-weight: normal;
+			color: #b6b6b6;
+			font-weight: 300;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		.form-signin h2.form-signin-heading {
+			margin: 0;
+			padding: 20px 15px;
+			text-align: center;
+			background: #41cac0;
+			border-radius: 5px 5px 0 0;
+			-webkit-border-radius: 5px 5px 0 0;
+			color: #fff;
+			font-size: 18px;
+			text-transform: uppercase;
+			font-weight: 300;
+			font-family: 'Open Sans', sans-serif;
+		}
+		
+		.form-signin input[type="text"], .form-signin input[type="password"] {
+			margin-bottom: 15px;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			border: 1px solid #eaeaea;
+			box-shadow: none;
+			font-size: 12px;
+		}
+		
+		.form-signin input[type="submit"] {
+			margin-top: 25px;
+		}
+		
+		.form-signin .form-control {
+			position: relative;
+			font-size: 16px;
+			height: auto;
+			padding: 10px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		
+		/* Input behavior */
+		
+		.form-signin input:focus{
+			outline: none !important;
+			box-shadow: none !important;
+			border-color: none !important;
+			border: 1px solid #eaeaea;
+		}	
+		
+		textarea{
+			height: 140px !important;
+			resize: none;
+		}
+	
+
+		
